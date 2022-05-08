@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
       checkOwner(accounts[0]);
     } else {
       onboardButton.innerText = 'Connect MetaMask!';
-      onboardButton.onclick = async () => {
+      onboardButton.onclick = async () => { 
         await window.ethereum.request({
           method: 'eth_requestAccounts',
         })
